@@ -3,6 +3,14 @@
 #### 介绍
 支持一键傻瓜式配置启动hyperf环境。其中内置php,mysql,redis,rabbitmq,memcached镜像编排,支持自定义指定官方镜像tag,官方镜像自定义。也可自行增减所需环境。后续更新各个环境编排例子。
 
+#### .env默认环境
+- php7.4
+- swoole4.5.10
+- redis
+- phpmyadmin
+- rabbitmq3.7.7
+- memcached
+
 #### 使用说明
 
 1.  复制`.env.example` 文件 ```cp .env.example .env```

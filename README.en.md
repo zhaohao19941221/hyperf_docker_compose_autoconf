@@ -3,6 +3,14 @@
 #### Introduction
 Support one-key fool-style configuration to start the hyperf environment. Which built-in php, mysql, redis, rabbitmq, memcached mirror arrangement, supports custom designation of official mirror tags, and official mirror customization. You can also increase or decrease the required environment. Follow-up updates of each environment arrangement example.
 
+#### .env default environment
+-php7.4,
+-swoole4.5.10
+-redis
+-phpmyadmin
+-rabbitmq3.7.7
+-memcached
+
 #### Instructions for use
 
 1. Copy `.env.example` file ```cp .env.example .env```
