@@ -6,6 +6,7 @@ Support one-key fool-style configuration to start the hyperf environment. Which 
 #### .env default environment
 - php7.4,
 - swoole4.5.10
+- mysql
 - redis
 - phpmyadmin
 - rabbitmq3.7.7

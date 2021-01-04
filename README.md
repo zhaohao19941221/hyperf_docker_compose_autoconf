@@ -6,6 +6,7 @@
 #### .env默认环境
 - php7.4
 - swoole4.5.10
+- mysql
 - redis
 - phpmyadmin
 - rabbitmq3.7.7
