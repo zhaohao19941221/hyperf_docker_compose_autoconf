@@ -2,10 +2,11 @@ version: '3'
 services:
   # hyperf
   hyperf:
-    image: hyperf/hyperf:${HYPERF_VERSION}
+    image: zhaohao19941221/php_swoole_redis_mysql:${HYPERF_VERSION}
     hostname: hyperf
     container_name: zh_hyperf
     restart: always
+    privileged: true
     ports:
       - '${HYPERF_HOST_PORT}:9501'
     links:
