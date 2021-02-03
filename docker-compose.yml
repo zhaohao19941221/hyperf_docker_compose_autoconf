@@ -26,12 +26,13 @@ services:
     container_name: zh_mysql
     hostname: mysql
     image: mysql:${MYSQL_VERSION}
+    privileged: true
     expose:
       - "3306"
     ports:
       - '${MYSQL_HOST_PORT}:3306'
     volumes:
-      - ${MYSQL_CONF_FILE}:/etc/my.cnf
+      - ${MYSQL_CONF_FILE}:/etc/mysql/my.cnf
       - ${MYSQL_DATA_DIR}:/var/lib/mysql
     restart: always
     environment:
@@ -92,7 +93,7 @@ services:
     hostname: mamcached
     container_name: zh_memcached
     ports:
-    - "${MEMCACHED_HOST_PORT}:11211"
+      - "${MEMCACHED_HOST_PORT}:11211"
     networks:
       - hyperf_networks
 networks:
